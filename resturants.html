@@ -1,0 +1,98 @@
+<html>
+<head>
+<link rel="stylesheet" href="/Users/davidalpert/Desktop/MV Project/MVstyling.css">
+</head>
+<body>
+  <H1> Martha's Vineyard </H1>
+
+  <div class="topnav">
+    <a href="/Users/davidalpert/Desktop/MV Project/MVHomepage.html">Home</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/beaches.html">Beaches</a>
+    <a class="active" href="/Users/davidalpert/Desktop/MV Project/resturants.html">Restaurants</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/Transport.html">Transportation</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/Landmarks.html">Landmarks</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/About.html">About</a>
+  </div>
+  <br>
+  <center>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/Backdoordonuts.JPG" Width="500px" Height="500px">
+    <div class="text">Back Door Donuts</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/LuckHanksSign.JPG" Width="500px" Height="500px">
+    <div class="text">Lucky Hanks</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/IMG_0208.jpg" Width="500px" Height="500px">
+    <div class="text">Black Dog Tavern</div>
+  </div>
+
+
+
+  </div>
+
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000);
+  }
+
+  </script>
+  </center>
+
+  <p>
+Martha's Vineyard has lots of restaurants. The Island is known for its seafood.
+    One well known restaurant is the Black Dog Tavern. It is owned by the Black Dog company
+    which you may know from its clothing stores. The Black Dog Tavern is located next to the ferry port in
+     Vineyard Haven. It has great harbor views and you get to see the Ferries come in.</p>
+<figure style="float:left; padding:0;">
+<a target="_blank" rel="noopener noreferrer" href="https://www.theblackdog.com/pages/the-black-dog-tavern">
+<img src="/Users/davidalpert/Desktop/MV Project/Blackdogsign.jpeg" width="310" height="240" style="float:left">
+</a>
+<figcaption>Black Dog Tavern<br>(Click Image)</figcaption>
+</figure>
+<p>
+Another great restaurant is Lucky Hanks. It is located on the outskirts of Edgartown. They serve very fresh food.
+During the summer season they have a porch and they also have indoor seating. The service at Lucky Hanks is exceptional.
+Lucky Hanks is a nice place to eat at.
+<br><br>
+A great dessert place is Back Door Donuts. It is located in Oak Bluffs. It serves fresh donuts from the back of its shop.
+The lines can get very long and is only open during the summer season. There are many more great restaurants.
+
+
+
+
+
+
+  </p>
+</body>

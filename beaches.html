@@ -1,0 +1,94 @@
+<html>
+<head>
+<link rel="stylesheet" href="/Users/davidalpert/Desktop/MV Project/MVstyling.css">
+</head>
+<body>
+  <H1> Martha's Vineyard </H1>
+
+  <div class="topnav">
+    <a href="/Users/davidalpert/Desktop/MV Project/MVHomepage.html">Home</a>
+    <a class="active"href="#Beaches">Beaches</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/resturants.html">Restaurants</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/Transport.html">Transportation</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/Landmarks.html">Landmarks</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/About.html">About</a>
+  </div>
+  <br>
+  <center>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/Menemsha Beach.jpg" Width="500px" Height="500px">
+    <div class="text">Menemsha Beach</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/Maosup Beach.JPG" Width="500px" Height="500px">
+    <div class="text">Moshup Beach</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/South Beach.JPG" Width="500px" Height="500px">
+    <div class="text">South Beach</div>
+  </div>
+
+
+
+  </div>
+
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000);
+  }
+
+  </script>
+  </center>
+
+  <p>
+    There are many beaches on the Island. Going to the beach is the main
+     thing to do on the Island. South Beach is located in Edgartown. It is a sandy
+     beach with little rocks. There is plenty of parking along the street. There can be very
+     big waves there sometimes but there are lifeguards there.</p>
+<figure style="float:left; padding:0;">
+<img src="/Users/davidalpert/Desktop/MV Project/Homepgsunset.JPG" width="310" height="240" style="float:left">
+<figcaption>Menemsha Beach</figcaption>
+</figure>
+<p>
+Another beach is Menemsha Beach. Menemsha Beach is located in the town of Menemsha.
+It is a rocky beach, with great sunsets because it is on the western side of the Island.
+It is on the outskirts of the Island and it can take a while to get to.
+<br><br>Moshup Beach is another beach on the Island. It is located in Aquinnah.
+It has very pretty cliffs. There are some big rocks on the beach and parking is limited.
+I recommend going to at least one of these beaches.
+</p>
+
+
+
+  </p>
+</body>

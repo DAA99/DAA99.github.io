@@ -1,0 +1,94 @@
+<html>
+<head>
+<link rel="stylesheet" href="/Users/davidalpert/Desktop/MV Project/MVstyling.css">
+</head>
+<body>
+  <H1> Martha's Vineyard </H1>
+
+  <div class="topnav">
+    <a href="/Users/davidalpert/Desktop/MV Project/MVHomepage.html">Home</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/beaches.html">Beaches</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/resturants.html">Restaurants</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/Transport.html">Transportation</a>
+    <a class="active" href="#Landmarks">Landmarks</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/About.html">About</a>
+  </div>
+  <br>
+  <center>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/GingerBredHouses.JPG" Width="500px" Height="500px">
+    <div class="text">Gingerbread Houses</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/Homepg5.jpg" Width="500px" Height="500px">
+    <div class="text">Edgartown Lighthouse</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/flying_horses_horses.jpg" Width="500px" Height="500px">
+    <div class="text">Flying Hourses Carousel</div>
+  </div>
+
+
+
+  </div>
+
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000);
+  }
+
+  </script>
+  </center>
+
+  <p>
+  There are several landmarks on the Island of Martha's Vineyard. One of which is the Edgartown
+   Lighthouse. It stands at the mouth of Edgartown Harbor. Some Days during the summer people are
+   allowed to go up and get great views of Edgartown and Chappeqidick. This is not the first lighthouse
+   that has stood there. There are many other Lighthouses on Martha's vineyard but this one is the main
+    Lighthouse of the Island. Edgartown Lighthouse is a must see on your trip to Martha's Vineyard.
+</p>
+<figure style="float:left; padding:0;">
+<img src="/Users/davidalpert/Desktop/MV Project/Gingerbread2.JPG" width="310" height="240" style="float:left">
+<figcaption>Gingerbread House</figcaption>
+</figure>
+<p>
+There is also the Flying Horses Carousel, the oldest operating Carousel in America. It is located in
+the heart of OakBluffs. It was once in New York City but moved to Oak Bluffs. The people on the ride go around and collect
+ rings from a slot. Whoever gets the brass ring wins a free ride. This is the place to go with kids but it is also fun for adults too.
+<br><br>Also in Oak Bluffs is the Gingerbread houses. There are around 318 gingerbread houses. The gingerbread houses are centered around
+a church and all of the houses are different from each other. People are allowed to walk around the houses and take pictures with them. This landmark is a great place to walk around at.
+
+
+
+  </p>
+</body>
