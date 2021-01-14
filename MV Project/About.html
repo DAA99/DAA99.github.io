@@ -1,0 +1,87 @@
+<html>
+<head>
+<link rel="stylesheet" href="/Users/davidalpert/Desktop/MV Project/MVstyling.css">
+<style>
+  .split {
+    height: 90%;
+    width: 48%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+  }
+
+
+  .left {
+    left: 5px;
+
+  }
+
+
+  .right {
+    right: 5px;
+  }
+p.double {border-style: double;
+  text-align:center;
+}
+form {border-style: double;
+  text-align:center;
+  padding:5px;
+  }
+</style>
+</head>
+<body>
+  <H1> Martha's Vineyard </H1>
+
+  <div class="topnav">
+    <a href="/Users/davidalpert/Desktop/MV Project/MVHomepage.html">Home</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/beaches.html">Beaches</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/resturants.html">Restaurants</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/Transport.html">Transportation</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/Landmarks.html">Landmarks</a>
+    <a class="active" href="#about">About</a>
+  </div>
+
+  <div class="split left">
+
+  <p class="double">
+  The author of this website is David. David has been visiting the Island since he was a young child.
+  He still visits the Island today. He built this website so he could share his love of the Island to other people.
+ For suggestions please answer the survey or if you have other feedback or questions
+  you can put it there too. All of the photos on this website have been taken by Emilie and Robert.
+    </p>
+
+  </div>
+
+<div class="split right">
+  <br>
+<center>
+  <form action="mailto:dalpert821@gmail.com" method="post" enctype="text/plain">
+  What was your favorite section?<br>
+  <input type="radio" id="Home" name="Favorite Section" value="Home">
+   <label >Home</label><br>
+   <input type="radio" id="Beaches" name="Favorite Section" value="Beaches">
+   <label >Beaches</label><br>
+   <input type="radio" id="Restaurants" name="Favorite Section" value="Restaurants">
+    <label >Restaurants</label><br>
+    <input type="radio" id="Transportation" name="Favorite Section" value="Transportation">
+    <label >Transportation</label><br>
+    <input type="radio" id="Landmarks" name="Favorite Section" value="Landmarks">
+    <label >Landmarks</label><br>
+<br>
+
+  How do you rate this site?<br>
+   <input type="radio" id="Great" name="Rating" value="Great">
+    <label >Great</label><br>
+    <input type="radio" id="Terrible" name="Rating" value="Terrible">
+    <label >Terrible</label><br>
+<br>
+  Do you have any comments or questions?<br>
+    <input type="text" name="Comments"><br>
+<br>
+  <input type="submit" value="Send"style="font-family: monospace;color: Red; font-size: 500px;" >
+  <input type="reset" value="Reset"style="font-family: monospace;color: Red; font-size: 500px;" >
+<br>
+  </form>
+</center>
+</div>
+</body>

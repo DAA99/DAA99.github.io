@@ -1,0 +1,96 @@
+<html>
+<head>
+<link rel="stylesheet" href="/Users/davidalpert/Desktop/MV Project/MVstyling.css">
+</head>
+<body>
+  <H1> Martha's Vineyard </H1>
+
+  <div class="topnav">
+    <a href="/Users/davidalpert/Desktop/MV Project/MVHomepage.html">Home</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/beaches.html">Beaches</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/resturants.html">Restaurants</a>
+    <a class="active" href="#Transportation">Transportation</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/Landmarks.html">Landmarks</a>
+    <a href="/Users/davidalpert/Desktop/MV Project/About.html">About</a>
+  </div>
+  <br>
+  <center>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/Chapequitic Ferry.MOV" Width="600px" Height="450px">
+    <div class="text">Chappy Ferry</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="/Users/davidalpert/Desktop/MV Project/Ferry.MOV" Width="610px" Height="450px">
+    <div class="text">Steamship Authority</div>
+  </div>
+  </div>
+
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3500);
+  }
+
+  </script>
+</center>
+
+  <p>
+    There are only two ways to come and to leave Martha's Vineyard, by air or by sea.
+    The Steamship Authority runs out of Woods Hole Massachusetts. It is
+    responsible for most of the travel to Martha's Vineyard. Their ferries
+    carry cars, trucks and people. The Ferries are very large because they can
+    carry a lot of people and vehicles. The ferries arrive in Vineyard Haven or
+    Oak Bluffs. The boat ride is about forty minutes long. The second way to come
+  or leave the Island
+   is by going to the Martha's Vineyard airport.
+</p>
+<figure style="float:left; padding:0;">
+<a target="_blank" rel="noopener noreferrer" href="https://www.steamshipauthority.com">
+<img src="/Users/davidalpert/Desktop/MV Project/IMG_0178.jpg"  width="310" height="240" style="float:left">
+</a>
+<figcaption>Steamship Authority<br>(Click Image)</figcaption>
+</figure>
+<p>
+The airport is small and is located in the center of the Island. There are many
+commercial airlines that fly to the airport and some private planes.
+<br><br>
+There is also a ferry that brings cars and people from
+Edgartown to Chappaquiddick. The Chappy Ferrie runs directly
+through Edgartown Harbor. In the summer time the Chappy Ferrie runs
+two boats and about three cars can fit on each one. A lot of people travel to
+Chappaquiddick to go biking. If you are not taking the Chappy Ferries, you can
+still see it. You can see it from a look out in Edgartown. Ferries are not the
+only way of transport to get to the Island or to move within the Islands.
+<br><br>
+The other ways are by biking or taking a taxi or bus. There are several bike rental
+shops among the Islands. There are also taxis in the larger towns of Oak Bluffs
+and Edgartown. There is also a bus line that runs all around the island These are some of the ways to come and to leave and to travel among Martha's Vineyard.
+</p>
+</body>
